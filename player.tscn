@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjpmyl2pfgico"]
+
+[ext_resource type="Script" uid="uid://n4alxns3dhnh" path="res://player.gd" id="1_qbjej"]
+[ext_resource type="Texture2D" uid="uid://cs7jgdk1b4kyh" path="res://frogbf.png" id="2_01yba"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hqtel"]
+size = Vector2(127.788, 125.348)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(71, 157)
+script = ExtResource("1_qbjej")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-75.75, -161.25)
+scale = Vector2(2.36328, 2.07422)
+texture = ExtResource("2_01yba")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-74.75, -160.25)
+scale = Vector2(2.36328, 2.07422)
+shape = SubResource("RectangleShape2D_hqtel")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-67, -161)
+zoom = Vector2(0.445, 0.445)
