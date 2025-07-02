@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dil740vhirwp7"]
+
+[ext_resource type="Texture2D" uid="uid://cdeywx0fjtl0f" path="res://frogbfbg.png" id="1_quv1r"]
+[ext_resource type="PackedScene" uid="uid://da2n1r8fk1bha" path="res://player.tscn" id="2_r4tsw"]
+
+[node name="main" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -4096
+texture_filter = 1
+offset_left = -1635.0
+offset_top = -1541.0
+offset_right = -734.0
+offset_bottom = -472.0
+scale = Vector2(4.40784, 2.43711)
+texture = ExtResource("1_quv1r")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_r4tsw")]
+position = Vector2(1045, 397)
+scale = Vector2(0.413281, 0.409431)
